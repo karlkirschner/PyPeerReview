@@ -1,5 +1,5 @@
 # PyPeerReview
-Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files (4 column, semicolon separated) that contain a) the name (First and Last), b) their email, c) the methods that they are experts in, and d) their research topics.
+Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files (4 column, semicolon separated) that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics.
 
 #### entrants.csv:
 
