@@ -11,6 +11,7 @@ Running the notebook will resuting a the creation of matching_results.csv.
 Name;Email;Methods;Topics<br>
 Zoowee Blubberworth;zb@fakemail.com;Mathematics, md;viruses, Security<br>
 Flufffy Gloomkins;fg@fakemail.com;md, Statistics;Virtual Reality, proteins<br>
+etc.
 
 #### reviewers.csv example file:
 Name;Email;Methods;Topics;Round 2016;Round  2017;Round  2018;Round  2019<br>
@@ -18,6 +19,17 @@ Peafy Doodoofish;pd@fakemail.com;Numerical Algorithms, Statistical Mechanics, In
 Peawee Pimplehair;pp@fakemail.com;Numerical Algorithms, Bioinformatics, NMR, Raman;Methods Development, Virtual Reality, DNA, Viruses;Yes; Yes; No; No<br>
 Chewlu Boogerbrain;cb@fakemail.com;Basis Sets, Statistical Mechanics, Molecular Dynamics, Bioinformatics;Security, Virtual Reality, Methods Development, Protein;No; No; No; No<br>
 Eggster HoboSmittens;eh@fakemail.com;Infrared, Machine Learning, NMR, Raman;Security, Carbohydrates, Viruses, DNA;Yes; Yes; Yes; Yes<br>
+etc.
+
+#### matching_results.csv:
+Reviewer Name;Entrant Name;Itemized Score [topics, methods, reviewer's history];Total Score<br>
+Fartmoo PimpleFadden;Flapberry Fudgewhistle;['1.000', '1.000', 0];2.0<br>
+Fartmoo PimpleFadden;Buritt Noseface;['0.500', '0.500', 0];1.0<br>
+Fartmoo PimpleFadden;Peaberry Wigglewhistle;['1.000', '0.000', 0];1.0<br>
+Ratspitz Noodlehill;Buritt Noseface;['0.500', '0.500', 0];1.0<br>
+Ratspitz Noodlehill;Peaberry Wigglewhistle;['0.500', '0.500', 0];1.0<br>
+Ratspitz Noodlehill;Trashwee Sockborn;['0.500', '0.500', 0];1.0<br>
+etc.
 
 #### taxonomy.csv:
 Topics;Methods<br>
@@ -31,6 +43,9 @@ viruses;<br>
 waste and recycling;<br>
 water;<br>
 zwitterions;<br>
+
+
+
 
 Sources:
 Fake names obtained from: https://www.imagineforest.com/blog/funny-name-generator/
