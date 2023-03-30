@@ -50,5 +50,6 @@ water;<br>
 zwitterions;<br>
 
 
-Sources:
-Fake names obtained from: https://www.imagineforest.com/blog/funny-name-generator/
+### Sources:
+- Fake names obtained from: https://www.imagineforest.com/blog/funny-name-generator/
+- The Sankey illustration was made using https://github.com/riley-x/SankeyFlow.git
