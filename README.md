@@ -1,4 +1,4 @@
-# PyPeerReview
+# PyPeerReview-Matching
 Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4 column, semicolon separated files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering puprposes and values as 'yes' or 'no'.
 
 A 2 column, semicolon separated taxonomy.csv file is included for suggestions on values for topics and methods.
