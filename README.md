@@ -7,6 +7,11 @@ The entrants.csv and reviewers.csv can be generated using a spreedsheet program.
 
 Running the notebook will resuting a the creation of matching_results.csv.
 
+<p align="center">
+  <img src="sankey.png" width="350" title="hover text"><br>
+  Figure 1. An illustration of resulting matching for 10 entrants, each requiring<br>3 reviews and each reviewer being responsible for performing 3.
+</p>
+
 #### entrants.csv example file:
 Name;Email;Methods;Topics<br>
 Zoowee Blubberworth;zb@fakemail.com;Mathematics, md;viruses, Security<br>
@@ -43,8 +48,6 @@ viruses;<br>
 waste and recycling;<br>
 water;<br>
 zwitterions;<br>
-
-
 
 
 Sources:
