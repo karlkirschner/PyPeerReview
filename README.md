@@ -5,6 +5,8 @@ A 2 column, semicolon separated taxonomy.csv file is included for suggestions on
 
 The entrants.csv and reviewers.csv can be generated using a spreedsheet program.
 
+Running the notebook will resuting a the creation of matching_results.csv.
+
 #### entrants.csv example file:
 Name;Email;Methods;Topics<br>
 Zoowee Blubberworth;zb@fakemail.com;Mathematics, md;viruses, Security<br>
