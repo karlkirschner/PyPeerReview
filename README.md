@@ -41,7 +41,7 @@ Email: k.n.kirschner _at_ gmail.com
 
 ##### Contribution:
 Concept: Kirschner<br>
-Coding and structure: Jiang and Bitterling (initial development); Kirschner
+Coding and structure:  Jiang, Daniel and Bitterling, Robert (prototype); Kirschner
 
 <hr style="height:30px"> 
 
