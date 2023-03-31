@@ -15,46 +15,37 @@ Running the notebook will resuting a the creation of matching_results.csv.
 </p>
 
 
-Input and Flags:
-    1) reviewers CSV file (; seperated)
-    2) entrants CSV file (; seperated)
-    3) use_history - 'True' or 'False'
-    4) reviewer_responsibility - number of reviews to be done by each reviewer
-    5) entrant_needed_reviews - number of reviews need for each entrant
+##### Input and Flags:
+1) reviewers CSV file (; seperated)
+2) entrants CSV file (; seperated)
+3) use_history - 'True' or 'False'
+4) reviewer_responsibility - number of reviews to be done by each reviewer
+5) entrant_needed_reviews - number of reviews need for each entrant
 
-Output:
-    1) CSV formatted file of matchings (; seperated), including itemized
-       and total matching scores.
-    2) prints to screen the suggested best matchings
+##### Output:
+1) CSV formatted file of matchings (; seperated), including itemized and total matching scores.
+2) prints to screen the suggested best matchings
 
-Library Dependencies:
-    1) Pandas
+##### Library Dependencies:
+1) Pandas
 
-Structure of input CSV files:
-    entrants.csv:
-        Name;Email;Methods;Topics
-    reviewers.csv:
-        Name;Email;Methods;Topics;Round 2019S;Round 2019F; ...
+##### Structure of input CSV files:
+The structure of the entrants.csv nd reviewers.csv input files can be found below. Examples given below. The Methods and Topics can be a several entries seperated by a comma. For the reviewers, it is assumed that the last columns are the histories of review participation (i.e., 'yes' or 'no'). These are provided in a column whose header name include the word 'Round' (see example).
 
-Methods and Topics can be a several entries seperated by a comma.
+##### Contact:
+Karl N. Kirschne<br>
+Department of Computer Science<br>
+University of Applied Sciences Bonn-Rhein-Sieg<br>
+Grantham-Allee 20<br>
+53757 Sankt Augustin - Germany<br>
 
-For the reviewers, it is assumed that the last columns are the histories of
-    review participation (i.e., 'yes' or 'no'). These are provided in a
-    column whose header name include the word 'Round' (see example).
+Email: k.n.kirschner _at_ gmail.com
 
-Contact:
-    Karl N. Kirschner
-    Department of Computer Science
-    University of Applied Sciences Bonn-Rhein-Sieg
-    Grantham-Allee 20
-    53757 Sankt Augustin - Germany
+##### Contribution:
+Concept: Kirschner<br>
+Coding and structure: Jiang and Bitterling (initial development); Kirschner
 
-    Email: k.n.kirschner _at_ gmail.com
-
-Contribution:
-    Concept: Kirschner
-    Coding and structure: Jiang and Bitterling (initial development); Kirschner
-
+<hr style="height:30px"> 
 
 #### entrants.csv example file:
 Name;Email;Methods;Topics<br>
