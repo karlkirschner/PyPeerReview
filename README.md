@@ -1,4 +1,5 @@
 # PyPeerReview-Matching
+
 Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4 column, semicolon separated files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering puprposes and values as 'yes' or 'no'.
 
 A 2 column, semicolon separated taxonomy.csv file is included for suggestions on values for topics and methods.
@@ -7,10 +8,53 @@ The entrants.csv and reviewers.csv can be generated using a spreedsheet program.
 
 Running the notebook will resuting a the creation of matching_results.csv.
 
+
 <p align="center">
   <img src="sankey.png" width="350" title="hover text"><br>
   Figure 1. An illustration of resulting matching for 10 entrants, each requiring<br>3 reviews and each reviewer being responsible for performing 3.
 </p>
+
+
+Input and Flags:
+    1) reviewers CSV file (; seperated)
+    2) entrants CSV file (; seperated)
+    3) use_history - 'True' or 'False'
+    4) reviewer_responsibility - number of reviews to be done by each reviewer
+    5) entrant_needed_reviews - number of reviews need for each entrant
+
+Output:
+    1) CSV formatted file of matchings (; seperated), including itemized
+       and total matching scores.
+    2) prints to screen the suggested best matchings
+
+Library Dependencies:
+    1) Pandas
+
+Structure of input CSV files:
+    entrants.csv:
+        Name;Email;Methods;Topics
+    reviewers.csv:
+        Name;Email;Methods;Topics;Round 2019S;Round 2019F; ...
+
+Methods and Topics can be a several entries seperated by a comma.
+
+For the reviewers, it is assumed that the last columns are the histories of
+    review participation (i.e., 'yes' or 'no'). These are provided in a
+    column whose header name include the word 'Round' (see example).
+
+Contact:
+    Karl N. Kirschner
+    Department of Computer Science
+    University of Applied Sciences Bonn-Rhein-Sieg
+    Grantham-Allee 20
+    53757 Sankt Augustin - Germany
+
+    Email: k.n.kirschner _at_ gmail.com
+
+Contribution:
+    Concept: Kirschner
+    Coding and structure: Jiang and Bitterling (initial development); Kirschner
+
 
 #### entrants.csv example file:
 Name;Email;Methods;Topics<br>
