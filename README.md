@@ -31,7 +31,7 @@ Running the notebook will resuting a the creation of matching_results.csv.
 The structure and examples of the entrants.csv nd reviewers.csv input files can be found below.The "Methods" and "Topics" can be several entries that are seperated by a comma. For the reviewers.csv, it is assumed that the last columns are the histories of their participation (i.e., 'yes' or 'no'). These are provided in a column whose header name include the word 'Round' (see example).
 
 ##### Contact:
-Karl N. Kirschne<br>
+Karl N. Kirschner<br>
 Department of Computer Science<br>
 University of Applied Sciences Bonn-Rhein-Sieg<br>
 Grantham-Allee 20<br>
