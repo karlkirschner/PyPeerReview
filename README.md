@@ -1,5 +1,6 @@
 # PyPeerReview-Matching
-Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4 column, semicolon separated files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering puprposes and values as 'yes' or 'no'.
+
+Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4 column files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering purposes and values as 'yes' or 'no'.
 
 A 2 column, semicolon separated taxonomy.csv file is included for suggestions on values for topics and methods.
 
@@ -11,6 +12,41 @@ Running the notebook will resuting a the creation of matching_results.csv.
   <img src="sankey.png" width="350" title="hover text"><br>
   Figure 1. An illustration of resulting matching for 10 entrants, each requiring<br>3 reviews and each reviewer being responsible for performing 3.
 </p>
+
+#### Known Bug
+  Depending on the numbers (i.e., number of reviewers, entrants, and how many reviews should be done), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and by the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
+
+##### Input and Flags:
+1) reviewers CSV file (; seperated)
+2) entrants CSV file (; seperated)
+3) use_history - 'True' or 'False'
+4) reviewer_responsibility - number of reviews to be done by each reviewer
+5) entrant_needed_reviews - number of reviews need for each entrant
+
+##### Output:
+1) CSV formatted file of matchings (; seperated), including itemized and total matching scores.
+2) prints to screen the suggested best matchings
+
+##### Library Dependencies:
+1) Pandas
+
+##### Structure of input CSV files:
+The structure and examples of the entrants.csv nd reviewers.csv input files can be found below.The "Methods" and "Topics" can be several entries that are seperated by a comma. For the reviewers.csv, it is assumed that the last columns are the histories of their participation (i.e., 'yes' or 'no'). These are provided in a column whose header name include the word 'Round' (see example).
+
+##### Contact:
+Karl N. Kirschner<br>
+Department of Computer Science<br>
+University of Applied Sciences Bonn-Rhein-Sieg<br>
+Grantham-Allee 20<br>
+53757 Sankt Augustin - Germany<br>
+
+Email: k.n.kirschner _at_ gmail.com
+
+##### Contribution:
+Concept: Kirschner<br>
+Coding and structure:  Jiang, Daniel and Bitterling, Robert (prototype); Kirschner
+
+<hr style="height:30px"> 
 
 #### entrants.csv example file:
 Name;Email;Methods;Topics<br>
