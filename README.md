@@ -14,7 +14,7 @@ Running the notebook will resuting a the creation of matching_results.csv.
 </p>
 
 #### Known Bug
-  Depending on the numbers (i.e., number of reviewers, entrants, and how many reviews should be done), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and by the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
+  Depending on the numbers (e.g., `reviewer_responsibility = 5` and  `entrant_needed_reviews = 3` for 10 entrant), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and by the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
 
 ##### Input and Flags:
 1) reviewers CSV file (; seperated)
