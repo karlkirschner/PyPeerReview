@@ -13,6 +13,9 @@ Running the notebook will resuting a the creation of matching_results.csv.
   Figure 1. An illustration of resulting matching for 10 entrants, each requiring<br>3 reviews and each reviewer being responsible for performing 3.
 </p>
 
+#### Known Bug
+  Depending on the numbers (i.e., number of reviewers, entrants, and how many reviews should be done), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and by the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
+
 ##### Input and Flags:
 1) reviewers CSV file (; seperated)
 2) entrants CSV file (; seperated)
