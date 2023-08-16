@@ -1,12 +1,12 @@
 # PyPeerReview-Matching
 
-Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4 column files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering purposes and values as 'yes' or 'no'.
+Python script to facilitate matching reviewers with entrants (i.e., reviewees), using CSV-formatted input files. Both the entrants.csv and reviewers.csv are 4-column files that contain a) the name (first and last), b) their email, c) the methods that they are experts in, and d) their research topics. The reviewers.csv can also have additional columns at the end containing their history of review participation, whose column headers must include the word "Round" for filtering purposes and values as 'yes' or 'no'.
 
-A 2 column, semicolon separated taxonomy.csv file is included for suggestions on values for topics and methods.
+A 2 column, semicolon-separated taxonomy.csv file is included for suggestions on values for topics and methods.
 
-The entrants.csv and reviewers.csv can be generated using a spreedsheet program.
+The entrants.csv and reviewers.csv can be generated using a spreadsheet program.
 
-Running the notebook will resuting a the creation of matching_results.csv.
+Running the notebook will result in the creation of matching_results.csv.
 
 <p align="center">
   <img src="sankey.png" width="350" title="hover text"><br>
@@ -14,24 +14,24 @@ Running the notebook will resuting a the creation of matching_results.csv.
 </p>
 
 #### Known Bug
-  Depending on the numbers (e.g., `reviewer_responsibility = 5` and  `entrant_needed_reviews = 3` for 10 entrant), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and by the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
+  Depending on the numbers (e.g., `reviewer_responsibility = 5` and  `entrant_needed_reviews = 3` for 10 entrants), **the script can result in a reviewer obtaining the same entrant twice**. To check this sort the results dataframe by both the reviewers and the entrants and do a visual inspection. Until this is solved, please check the results and hand edit where needed.
 
 ##### Input and Flags:
-1) reviewers CSV file (; seperated)
-2) entrants CSV file (; seperated)
+1) reviewers CSV file (; separated)
+2) entrants CSV file (; separated)
 3) use_history - 'True' or 'False'
 4) reviewer_responsibility - number of reviews to be done by each reviewer
 5) entrant_needed_reviews - number of reviews need for each entrant
 
 ##### Output:
-1) CSV formatted file of matchings (; seperated), including itemized and total matching scores.
+1) CSV formatted file of matchings (; separated), including itemized and total matching scores.
 2) prints to screen the suggested best matchings
 
 ##### Library Dependencies:
 1) Pandas
 
 ##### Structure of input CSV files:
-The structure and examples of the entrants.csv nd reviewers.csv input files can be found below.The "Methods" and "Topics" can be several entries that are seperated by a comma. For the reviewers.csv, it is assumed that the last columns are the histories of their participation (i.e., 'yes' or 'no'). These are provided in a column whose header name include the word 'Round' (see example).
+The structure and examples of the entrants.csv and reviewers.csv input files can be found below. The "Methods" and "Topics" can be several entries that are separated by a comma. For the reviewers.csv, it is assumed that the last columns are the histories of their participation (i.e., 'yes' or 'no'). These are provided in a column whose header name includes the word 'Round' (see example).
 
 ##### Contact:
 Karl N. Kirschner<br>
